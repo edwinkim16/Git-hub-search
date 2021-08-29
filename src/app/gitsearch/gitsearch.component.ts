@@ -9,6 +9,9 @@ import {environment } from '../../environments/environment';
   styleUrls: ['./gitsearch.component.css']
 })
 export class GitsearchComponent implements OnInit {
+  user!: any;
+  repos!: any[];
+  username!: string;
 
   constructor() { }
 
