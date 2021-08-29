@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DateCountPipe
+    DateCountPipe,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,
