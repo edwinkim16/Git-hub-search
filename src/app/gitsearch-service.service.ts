@@ -17,4 +17,14 @@ export class GitsearchServiceService {
     this.username = "edwinkim16";
     this.repo = "";
   }
+
+  getUser(username:any):Observable<any> {
+    return this.http.get("https://api.github.com/users/" + username + "?access_token="+ environment.accessToken)
+    .pipe((res =>res));
+  }
+
+  getRepos(username:any): Observable<any> {
+    return this.http.get("https://api.github.com/users/" + username + "/repos?access_token=" + environment.accessToken)
+    .pipe((res => res));
+  }
 }
