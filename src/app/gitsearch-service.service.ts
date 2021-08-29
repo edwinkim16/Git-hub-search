@@ -8,6 +8,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GitsearchServiceService {
+  apiUrl = environment.apiUrl;
+  private username: string;
+  private repo: string;
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    console.log("ready");
+    this.username = "edwinkim16";
+    this.repo = "";
+  }
 }
