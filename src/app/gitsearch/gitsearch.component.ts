@@ -13,7 +13,22 @@ export class GitsearchComponent implements OnInit {
   repos!: any[];
   username!: string;
 
-  constructor() { }
+  constructor(private gitsearchService: GitsearchServiceService,
+    private http:HttpClient) { }
+
+    findUser() {
+     
+      this.gitsearchService.getUser(this.username).subscribe((data) => {
+    
+      
+        // console.table(data)
+           return this.user=data;
+          
+        },(error: any) =>{
+          console.log(error);
+          }
+      )
+    }
 
   ngOnInit(): void {
   }
