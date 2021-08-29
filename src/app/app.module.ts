@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
 import { StrikethroughDirective } from './strikethrough.directive';
+import { GitsearchComponent } from './gitsearch/gitsearch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DateCountPipe,
-    StrikethroughDirective
+    StrikethroughDirective,
+    GitsearchComponent
   ],
   imports: [
     BrowserModule,
