@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #C4C4C4;
+}
 .nav{
     background-color: #161748;
     color: white;
