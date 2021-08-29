@@ -24,10 +24,10 @@ export class GitsearchComponent implements OnInit {
         // console.table(data)
            return this.user=data;
           
-        },(error: any) =>{
-          console.log(error);
-          }
-      )
+        },(error)=>{
+      alert("please write the correct username")
+    });
+      
     }
 
     findRepo() {
