@@ -30,6 +30,20 @@ export class GitsearchComponent implements OnInit {
       )
     }
 
+    findRepo() {
+      // this.gitsearchService.updateUser(this.username);
+      this.gitsearchService.getRepos(this.username).subscribe((data) => {
+    
+       this.repos=data
+        // console.log(this.repos)
+          return this.repos=data;
+          
+        },(error: any) =>{
+          console.log(error);
+          }
+      )
+    }
+
   ngOnInit(): void {
   }
 
