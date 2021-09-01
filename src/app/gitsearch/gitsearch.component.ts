@@ -45,6 +45,9 @@ export class GitsearchComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    this.username="edwinkim16"
+    this.findUser()
+    this.findRepo()
   }
 
 }
